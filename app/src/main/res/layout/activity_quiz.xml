@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <Button
+        android:id="@+id/button_quiz_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorButton4"
+        android:text=" Button "
+        android:fontFamily="@font/adamina"
+        />
+
+    <EditText
+        android:id="@+id/quiz_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_quiz_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz_edit_text"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorButton4"
+        android:fontFamily="@font/adamina"
+        android:onClick="check"
+        android:text="CHECK" />
+</RelativeLayout>

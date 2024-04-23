@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorButton3"
+        android:fontFamily="@font/adamina"
+        android:onClick="quiz"
+        android:text="Quiz"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorButton3"
+        android:fontFamily="@font/adamina"
+        android:onClick="choose_play"
+        android:text=" Choose the correct answer "
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:layout_editor_absoluteX="88dp" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorButton3"
+        android:fontFamily="@font/adamina"
+        android:onClick="true_or_false_play"
+        android:text=" True or False "
+        android:textColor="@color/cardview_light_background" />
+</RelativeLayout>

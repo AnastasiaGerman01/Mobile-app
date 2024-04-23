@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrueOrFalse">
+
+    <Button
+        android:id="@+id/button_false1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorButton4"
+        android:fontFamily="@font/adamina"
+        android:layout_marginRight="30dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button_false2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_false1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorButton4"
+        android:fontFamily="@font/adamina"
+        android:layout_marginRight="30dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button_false3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_false2"
+        android:layout_marginLeft="95dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorButton1"
+        android:text="+"
+        android:textColor="#FDFDFD"
+        android:textSize="50sp"
+        android:onClick="it_is_true"
+        android:fontFamily="@font/adamina"/>
+
+    <Button
+        android:id="@+id/button_false4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_false2"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/button_false3"
+        android:background="@color/colorButton2"
+        android:text="-"
+        android:textColor="#FAF4F4"
+        android:textSize="50sp"
+        android:onClick="it_is_false"
+        android:fontFamily="@font/adamina"
+        />
+
+</RelativeLayout>
